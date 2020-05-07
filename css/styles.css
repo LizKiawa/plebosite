@@ -15,23 +15,99 @@ header h2 {
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #4285F4;
 }
 
-footer {
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0;
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: rgba(255,255,255,.5);
 }
 
 .jumbotron {
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
+    background: #fff;
     margin: 0;
 }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
     min-height: 200px;
 }
+.carousel {
+    border: solid #5637DD;
+}
+
+/* Slick Carousel */
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #901CAD;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: #fff;
+    outline: none;
+    background: #901CAD;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev
+{
+    left: -30px;
+}
+.slick-prev:before
+{
+    content: '<';
+}
+.slick-next
+{
+    right: -30px;
+}
+.slick-next:before
+{
+    content: '>';
+}
+
+/* End Slick Carousel */
