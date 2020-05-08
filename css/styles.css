@@ -1,17 +1,20 @@
 body {
     font-family: "Open Sans", sans-serif;
+    color: #393F44;
+}
+
+a {
+    color: #FFA500;
+}
+
+a:hover {
+    color: #4285F4;
+    text-decoration: none;
 }
 
 h1, h2, h3 {
     font-family: "Lobster", cursive;
-}
-
-h2 {
-    color: #3046C5;
-}
-
-header h2 {
-    color: #CEC8FF;
+    color: #292E34;
 }
 
 .navbar {
@@ -35,8 +38,9 @@ header h2 {
 .row-content {
     min-height: 200px;
 }
+
 .carousel {
-    border: solid #5637DD;
+    border: 1px solid #72767B;
 }
 
 /* Slick Carousel */
@@ -59,7 +63,9 @@ header h2 {
     color: #fff;
     border: none;
     outline: none;
-    background: #901CAD;
+    background: #4285F4;
+    border-radius: 15px;
+    font-weight: 600;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -68,7 +74,7 @@ header h2 {
 {
     color: #fff;
     outline: none;
-    background: #901CAD;
+    background: #4285F4;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -109,5 +115,25 @@ header h2 {
 {
     content: '>';
 }
-
 /* End Slick Carousel */
+.img-thumbnail {
+    border: none;
+    padding: 0;
+}
+.location-list__item {
+    display: flex;
+    align-items: center;
+}
+.location-list__location-name a{
+    font-size: 1.25rem;
+}
+.add-to-itinerary {
+    background-color: #FFA500;
+    color: #ffffff;
+    border: #FFA500;
+}
+/* .itineraryAdded {
+    background-color: #3F9C35;
+    border: #3F9C35;
+    content: "Added!";
+} */

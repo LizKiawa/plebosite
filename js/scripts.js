@@ -32,4 +32,12 @@ $(function() {
       }
     ]
   });
+
+  $(".add-to-itinerary").click(function(){
+    this.style.backgroundColor = "#3F9C35";
+    this.style.border = "#3F9C35";
+    this.innerHTML = "Added!";
+    // $(".add-to-itinerary").toggleClass("itineraryAdded");
+  });
+
 });
