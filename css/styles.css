@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #393F44;
 }
 
@@ -13,24 +13,28 @@ a:hover {
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
-    color: #292E34;
+    font-family: 'Roboto', sans-serif;
+    color: #393F44;
 }
 
 .navbar {
-    background-color: #4285F4;
+    margin-top: -70px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #4285F4;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 166, 0, 0.63);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFA500;
 }
 
 .jumbotron {
-    padding: 30px;
+    padding: 10px;
     background: #fff;
     margin: 0;
 }
@@ -38,6 +42,10 @@ h1, h2, h3 {
 .row-content {
     min-height: 200px;
 }
+
+/* .plebo-logo {
+    z-index: 10;
+} */
 
 .carousel {
     border: 1px solid #72767B;
@@ -123,6 +131,9 @@ h1, h2, h3 {
 .slick-next:before
 {
     content: '>';
+}
+.slick-dots {
+    display: none !important;
 }
 /* End Slick Carousel */
 .img-thumbnail {
