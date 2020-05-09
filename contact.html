@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Plebo: Contact</title>
+</head>
+
+<body>
+
+  <header class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+      <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#pleboNavBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="pleboNavBar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="listcities.html">Cities</a></li>
+          <li class="nav-item"><a class="nav-link" href="newItinerary.html">New Itinerary</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row row-content align-items-center py-4">
+      <div class="col mb-2">
+        <h2 class="mb-4">Contact Us</h2>
+        <div class="container-fluid">
+          <form action="mailto:contact@plebo.com" method="get" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group col-12">
+                <label class="sr-only" for="contactFName">First Name</label>
+                <input type="text" class="form-control form-control-sm" id="contactFName" placeholder="First Name">
+              </div>
+              <div class="form-group col-12">
+                <label class="sr-only" for="contactLName">Last Name</label>
+                <input type="text" class="form-control form-control-sm" id="contactLName" placeholder="Last Name">
+              </div>
+              <div class="form-group col-12">
+                <label class="sr-only" for="contactEmail">Email address</label>
+                <input type="email" class="form-control form-control-sm" id="contactEmail" placeholder="Enter email">
+              </div>
+              <div class="form-group col-12">
+                <label class="sr-only" for="contactMessage">Message</label>
+                <textarea type="text" class="form-control form-control-sm" id="contactMessage" placeholder="Message"></textarea>
+              </div>
+              <div class="col">
+                <label for="receive-updates-yes" class="mr-2">Receive updates to your email?</label>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="receive-updates-yes" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="receive-updates-yes">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="receive-updates-no" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="receive-updates-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="btn btn-primary btn-sm ml-1 send-contact-btn">Send</button>
+            </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col ml-auto text-right border-top mt-5 py-2">
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>

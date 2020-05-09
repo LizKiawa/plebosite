@@ -1,6 +1,6 @@
 $(function() {
   $(".carousel").carousel({interval: 2000});
-  $('.your-class').slick({
+  $('.popular-itineraties__carousel').slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -36,8 +36,12 @@ $(function() {
   $(".add-to-itinerary").click(function(){
     this.style.backgroundColor = "#3F9C35";
     this.style.border = "#3F9C35";
-    this.innerHTML = "Added!";
-    // $(".add-to-itinerary").toggleClass("itineraryAdded");
+    this.innerHTML = "Added to Itinerary";
   });
 
+  $(".send-contact-btn").click(function(){
+    this.style.backgroundColor = "#3F9C35";
+    this.style.border = "#3F9C35";
+    this.innerHTML = "Sent!";
+  });
 });

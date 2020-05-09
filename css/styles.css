@@ -43,6 +43,15 @@ h1, h2, h3 {
     border: 1px solid #72767B;
 }
 
+.carousel-caption {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 15px;
+}
+.carousel-indicators {
+    bottom: 0;
+}
+
 /* Slick Carousel */
 /* Arrows */
 .slick-prev,
@@ -124,7 +133,7 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
 }
-.location-list__location-name a{
+.location-list__location-name a, .city-list .card-title, .popular-itineraties__carousel .card-title{
     font-size: 1.25rem;
 }
 .add-to-itinerary {
@@ -137,3 +146,9 @@ h1, h2, h3 {
     border: #3F9C35;
     content: "Added!";
 } */
+.city-list .card {
+    border: 0;
+}
+.city-list .card-body {
+    padding: 1rem 0;
+}
