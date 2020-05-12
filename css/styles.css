@@ -60,7 +60,7 @@ h1, h2, h3 {
     bottom: 0;
 }
 
-#homeCarousel .carousel-item img {
+#homeCarousel .carousel-item img, #location__museum-of-life-and-sciences  .carousel-item img{
     width: 1108px;
     height: 623px;
 }
