@@ -77,7 +77,6 @@ $(function() {
   }
 
   function saveToStorage(locationSelected) {
-    console.log(locationSelected);
     locationData.push({
       location: locationSelected
     });
@@ -85,6 +84,7 @@ $(function() {
   }
 
   function clearCurrentItinerary() {
+    locationData = [];
     localStorage.removeItem("currentItinerary");
     getCurrentItinerary();
   }
