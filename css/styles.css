@@ -45,12 +45,10 @@ h1, h2, h3 {
     min-height: 200px;
 }
 
-/* .plebo-logo {
-    z-index: 10;
-} */
 
 .carousel {
     border: 1px solid #72767B;
+    border-radius: 5px;
 }
 
 .carousel-caption {
@@ -62,6 +60,10 @@ h1, h2, h3 {
     bottom: 0;
 }
 
+#homeCarousel .carousel-item img {
+    width: 1108px;
+    height: 623px;
+}
 /* Slick Carousel */
 /* Arrows */
 .slick-prev,
@@ -137,6 +139,10 @@ h1, h2, h3 {
 .slick-dots {
     display: none !important;
 }
+.popular-itineraties__carousel .card .img-thumbnail {
+    width: 276px;
+    height: 183px;
+}
 /* End Slick Carousel */
 .img-thumbnail {
     border: none;
@@ -154,14 +160,41 @@ h1, h2, h3 {
     color: #ffffff;
     border: #FFA500;
 }
-/* .itineraryAdded {
-    background-color: #3F9C35;
-    border: #3F9C35;
-    content: "Added!";
-} */
+
 .city-list .card {
     border: 0;
 }
 .city-list .card-body {
     padding: 1rem 0;
+}
+
+.city-list .card img{
+    width: 350px;
+    height: 230px;
+}
+.current-itinerary-list p {
+    border-bottom: 1px solid #FFA500;
+    padding: 5px;
+}
+#itineraryModal .modal-header {
+    background: #4285F4;
+}
+
+#itineraryModal .modal-header h3, #itineraryModal .modal-header button{
+    color: #fff;
+}
+
+#itineraryModal .modal-body {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+#itineraryModal .modal-body .current-itinerary-list {
+    margin-top: 10px;
+}
+
+#itineraryModal .modal-body .clear-itinierary {
+    font-size: 14px;
+    float: right;
+    text-decoration: underline;
 }

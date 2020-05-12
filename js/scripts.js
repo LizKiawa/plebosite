@@ -53,14 +53,26 @@ $(function() {
     getCurrentItinerary();
   });
 
+  $(".clear-itinierary").click(function(e){
+    e.preventDefault();
+    clearCurrentItinerary();
+  });
+
   function getCurrentItinerary() {
     //retrieving from local storage
     let localStorageCurrentItinerary = JSON.parse(localStorage.getItem('currentItinerary'));
     let currentItineraryList = $(".current-itinerary-list");
+    let clearBtn = $(".clear-itinierary");
+    
     if (localStorageCurrentItinerary !== null) {
+      currentItineraryList[0].innerHTML="";
+      clearBtn[0].style.display="block";
       $.each(localStorageCurrentItinerary,function(index,localStorageCurrentItinerary){
         currentItineraryList.append('<p>' + localStorageCurrentItinerary.location + '</p>');   
       });
+    } else {
+      currentItineraryList[0].innerHTML="You have no items in your itinerary";
+      clearBtn[0].style.display="none";
     }
   }
 
@@ -70,6 +82,11 @@ $(function() {
       location: locationSelected
     });
     localStorage.setItem('currentItinerary', JSON.stringify(locationData));
+  }
+
+  function clearCurrentItinerary() {
+    localStorage.removeItem("currentItinerary");
+    getCurrentItinerary();
   }
   
 });
