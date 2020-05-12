@@ -19,6 +19,8 @@ h1, h2, h3 {
 
 .navbar {
     margin-top: -70px;
+    display: inline-flex;
+    float: right;
 }
 
 .navbar-dark .navbar-nav .nav-link {

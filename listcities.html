@@ -40,10 +40,27 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a class="nav-link" href="listcities.html">Cities</a></li>
           <li class="nav-item"><a class="nav-link" href="newItinerary.html">New Itinerary</a></li>
+          <li class="nav-item"><a class="nav-link current-itinerary__modal" data-toggle="modal" data-target="#itineraryModal">Current Itinerary</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- current itinerary modal -->
+  <div id="itineraryModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Current Itinerary </h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="current-itinerary-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End current itinerary modal -->
 
   <div class="container">
     <div class="row row-content align-items-center py-4">

@@ -32,35 +32,16 @@ $(function() {
       }
     ]
   });
-
-  //retrieving from local storage on load
-  // var localStorageQuickOrderData = JSON.parse(localStorage.getItem('quickorderitems'));
-  // var quickOrderRow = $(".app-quick-order__part-row");
-
-  // if (localStorageQuickOrderData !== null) {
-  //   $.each(localStorageQuickOrderData,function(index,localStorageQuickOrderData){
-  //     var myClone = quickOrderRow.clone();
-  //     myClone.find(".jq-quick-order-part-number").val(localStorageQuickOrderData.partNumber);
-  //     myClone.find(".number-stepper input").val(localStorageQuickOrderData.partQuantity);
-  //     $(".app-quick-order-body").append(myClone);
-  //   });
-  //   $(".app-quick-order-body").append(quickOrderRow);
-  //   $(".app-quick-order-footer").css("display", "block");
-  // }
+  let locationData = [];
+  getCurrentItinerary();
 
   $(".add-to-itinerary").click(function(){
     this.style.backgroundColor = "#3F9C35";
     this.style.border = "#3F9C35";
     this.innerHTML = "Added to Itinerary";
-    this.addClass("sasa");
     let locationSelected = this.dataset.locationName;
     saveToStorage(locationSelected);
   });
-
-  // $(".remove-from-itinerary").click(function(){
-    // let locationSelected = this.dataset.locationName;
-    // clearStorage(locationSelected);
-  // });
 
   $(".send-contact-btn").click(function(){
     this.style.backgroundColor = "#3F9C35";
@@ -68,17 +49,27 @@ $(function() {
     this.innerHTML = "Sent!";
   });
 
+  $(".current-itinerary__modal").click(function(){
+    getCurrentItinerary();
+  });
+
+  function getCurrentItinerary() {
+    //retrieving from local storage
+    let localStorageCurrentItinerary = JSON.parse(localStorage.getItem('currentItinerary'));
+    let currentItineraryList = $(".current-itinerary-list");
+    if (localStorageCurrentItinerary !== null) {
+      $.each(localStorageCurrentItinerary,function(index,localStorageCurrentItinerary){
+        currentItineraryList.append('<p>' + localStorageCurrentItinerary.location + '</p>');   
+      });
+    }
+  }
+
   function saveToStorage(locationSelected) {
     console.log(locationSelected);
-    let locationData = [];
     locationData.push({
       location: locationSelected
     });
     localStorage.setItem('currentItinerary', JSON.stringify(locationData));
   }
-
-  // function clearStorage(locationSelected) {
-  //   localStorage.removeItem("locationData");
-  // }
   
 });
